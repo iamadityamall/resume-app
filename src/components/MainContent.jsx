@@ -3,10 +3,10 @@ import React from "react";
 const MainContent = () => {
   return (
     <main className="bg-black/90 min-h-screen pt-14">
-      <section className="z-10 bg-primary w-[95vw] h-screen mx-auto p-6">
+      <section className="z-10 bg-primary w-[95vw] h-screen mx-auto p-4">
         <header className="flex flex-col items-center justify-between space-y-2">
-          <div className="flex  text-[10px] items-end space-x-10">
-            <div className="text-ternary tracking-wide">
+          <div className="flex text-[8px] items-center space-x-5">
+            <div className="text-ternary">
               <h1 className="font-primary/700 font-extrabold text-black text-lg">
                 Aditya Harendra Mall
               </h1>
@@ -15,7 +15,7 @@ const MainContent = () => {
                 career and grow, working with my skills and knowledge.
               </p>
             </div>
-            <div className="text-ternary space-y-1">
+            <div className="text-ternary space-y-0.5 flex flex-col w-32">
               <h6 className="font-bold">+91 90299 92818</h6>
               <a
                 href="mailto:contact.adityamall@gmail.com"
