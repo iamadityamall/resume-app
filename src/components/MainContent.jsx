@@ -2,7 +2,7 @@ import React from "react";
 
 const MainContent = () => {
   return (
-    <main className="bg-black/90 min-h-screen pt-14">
+    <main className="bg-black min-h-screen pt-14">
       <section className="z-10 bg-primary w-[95vw] mx-auto p-4 font-secondary">
         <header className="flex flex-col items-center justify-between space-y-1">
           <div className="flex text-[8px] items-center space-x-5">
