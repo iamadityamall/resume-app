@@ -3,7 +3,7 @@ import React from "react";
 const MainContent = () => {
   return (
     <main className="bg-black/90 min-h-screen pt-14">
-      <section className="z-10 bg-primary w-[95vw] mx-auto p-4 h-screen">
+      <section className="z-10 bg-primary w-[95vw] mx-auto p-4 font-secondary">
         <header className="flex flex-col items-center justify-between space-y-1">
           <div className="flex text-[8px] items-center space-x-5">
             <div className="text-ternary">
@@ -32,8 +32,8 @@ const MainContent = () => {
 
           <div className="h-[1.5px] w-[90vw] bg-secondary"></div>
         </header>
-        <main className="flex pt-4 w-full space-x-2">
-          <article className="w-[60vw] text-[8px] flex flex-col space-y-2">
+        <main className="flex py-4 w-full space-x-2">
+          <article className="w-[60vw] text-[8px] flex flex-col space-y-4">
             <div className="flex flex-col space-y-1" id="projects">
               <h2 className="text-[9px] font-bold text-secondary">PROJECTS</h2>
               <div className="flex flex-col space-y-2 text-ternary">
@@ -101,6 +101,41 @@ const MainContent = () => {
                 </li>
               </ul>
             </div>
+            <div className="flex flex-col space-y-1" id="experience">
+              <h2 className="text-[9px] font-bold text-secondary">
+                OTHER EXPERIENCES
+              </h2>
+              <div className="flex flex-col space-y-2 text-ternary">
+                <div>
+                  <h4 className="text-black font-bold">Job Title</h4>
+                  <p>month year - month year</p>
+                  <ul className="list-disc text-[7px] relative left-4 w-5/6">
+                    <li>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Soluta, dolorum?
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maxime, culpa?
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-black font-bold">Job Title</h4>
+                  <p>month year - month year</p>
+                  <ul className="list-disc text-[7px] relative left-4 w-5/6">
+                    <li>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Soluta, dolorum?
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maxime, culpa?
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </article>
           <article className="w-[30vw] text-[8px] text-ternary flex flex-col space-y-4">
             <div className="flex flex-col space-y-1" id="education">
@@ -134,29 +169,25 @@ const MainContent = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col space-y-1" id="extracurricular">
+            <div
+              className="flex flex-col space-y-1 leading-relaxed"
+              id="extracurricular"
+            >
               <h3 className="font-bold text-secondary text-[9px]">
                 EXTRA CURRICULAR
               </h3>
               <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary">
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, soluta.
+                  Worked as a soccer assistant coach for Fr.Agnel School from
+                  2014-17
                 </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, soluta.
-                </li>
+                <li>Attemped UPSC ESE exam for the year 2018-20</li>
               </ul>
             </div>
-            <div className="flex flex-col space-y-1" id="extracurricular">
-              <h3 className="font-bold text-secondary text-[9px]">
-                LANGUAGES
-              </h3>
+            <div className="flex flex-col space-y-1" id="languages">
+              <h3 className="font-bold text-secondary text-[9px]">LANGUAGES</h3>
               <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary">
-                <li>
-                  English, Hindi, Marathi
-                </li>
+                <li>English, Hindi, Marathi</li>
               </ul>
             </div>
           </article>
