@@ -3,7 +3,7 @@ import React from "react";
 const MainContent = () => {
   return (
     <main className="bg-black/90 min-h-screen pt-14">
-      <section className="z-10 bg-primary w-[95vw] mx-auto p-4">
+      <section className="z-10 bg-primary w-[95vw] mx-auto p-4 h-screen">
         <header className="flex flex-col items-center justify-between space-y-1">
           <div className="flex text-[8px] items-center space-x-5">
             <div className="text-ternary">
@@ -32,9 +32,9 @@ const MainContent = () => {
 
           <div className="h-[1.5px] w-[90vw] bg-secondary"></div>
         </header>
-        <main className="flex pt-2 border-2 border-black w-full h-screen space-x-2">
-          <article className="w-[60vw] bg-purple-300 text-[8px] flex flex-col space-y-2">
-            <div className="bg-blue-400 flex flex-col space-y-1" id="projects">
+        <main className="flex pt-4 w-full space-x-2">
+          <article className="w-[60vw] text-[8px] flex flex-col space-y-2">
+            <div className="flex flex-col space-y-1" id="projects">
               <h2 className="text-[9px] font-bold text-secondary">PROJECTS</h2>
               <div className="flex flex-col space-y-2 text-ternary">
                 <div>
@@ -67,7 +67,7 @@ const MainContent = () => {
             </div>
             <div className="flex flex-col space-y-1" id="skills">
               <h3 className="font-bold text-secondary text-[9px]">SKILLS</h3>
-              <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary">
+              <ul className="list-disc relative left-4 w-[90%] text-[7px] text-ternary">
                 <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Suscipit, soluta.
@@ -86,7 +86,7 @@ const MainContent = () => {
               <h3 className="font-bold text-secondary text-[9px]">
                 CERTIFICATION
               </h3>
-              <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary">
+              <ul className="list-disc relative left-4 w-[90%] text-[7px] text-ternary">
                 <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Suscipit, soluta.
@@ -102,7 +102,7 @@ const MainContent = () => {
               </ul>
             </div>
           </article>
-          <article className="w-[30vw] bg-red-400 text-[8px] text-ternary flex flex-col space-y-4">
+          <article className="w-[30vw] text-[8px] text-ternary flex flex-col space-y-4">
             <div className="flex flex-col space-y-1" id="education">
               <h3 className="text-[9px] font-bold text-secondary">EDUCATION</h3>
               <div className="flex flex-col space-y-2">
