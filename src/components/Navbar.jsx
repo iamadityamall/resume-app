@@ -20,7 +20,7 @@ const Navbar = () => {
           <div>
             <AiFillFilePdf className="text-2xl text-red-600" />
           </div>
-          <div className="text-s font-sans">Resume-Aditya-Mall.pdf</div>
+          <div className="text-sm font-sans">Resume-Aditya-Mall.pdf</div>
         </div>
       </div>
 

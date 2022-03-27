@@ -6,7 +6,7 @@ const MainContent = () => {
       <section className="z-10 bg-primary w-[95vw] h-screen mx-auto p-6">
         <header className="flex flex-col items-center justify-between space-y-2">
           <div className="flex  text-[10px] items-end space-x-10">
-            <div className="text-ternary">
+            <div className="text-ternary tracking-wide">
               <h1 className="font-primary/700 font-extrabold text-black text-lg">
                 Aditya Harendra Mall
               </h1>
@@ -30,7 +30,7 @@ const MainContent = () => {
             </div>
           </div>
 
-          <div className="h-[2px] w-[85vw] mx-auto bg-secondary/80"></div>
+          <div className="h-[1.5px] w-[85vw] mx-auto bg-secondary/80"></div>
         </header>
       </section>
     </main>
