@@ -10,7 +10,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="w-screen flex justify-between px-6 py-2 fixed top-0 text-white">
+    <nav className="w-screen flex justify-between px-4 py-2 fixed top-0 text-white">
       {/*navbar left section*/}
       <div className="flex items-center space-x-8">
         <button className="p-2">
