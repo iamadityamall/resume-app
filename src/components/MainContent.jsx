@@ -3,8 +3,8 @@ import React from "react";
 const MainContent = () => {
   return (
     <main className="bg-black/90 min-h-screen pt-14">
-      <section className="z-10 bg-primary w-[95vw] h-screen mx-auto p-4">
-        <header className="flex flex-col items-center justify-between space-y-2">
+      <section className="z-10 bg-primary w-[95vw] mx-auto p-4">
+        <header className="flex flex-col items-center justify-between space-y-1">
           <div className="flex text-[8px] items-center space-x-5">
             <div className="text-ternary">
               <h1 className="font-primary/700 font-extrabold text-black text-lg">
@@ -30,8 +30,137 @@ const MainContent = () => {
             </div>
           </div>
 
-          <div className="h-[1.5px] w-[90vw] bg-secondary/80"></div>
+          <div className="h-[1.5px] w-[90vw] bg-secondary"></div>
         </header>
+        <main className="flex pt-2 border-2 border-black w-full h-screen space-x-2">
+          <article className="w-[60vw] bg-purple-300 text-[8px] flex flex-col space-y-2">
+            <div className="bg-blue-400 flex flex-col space-y-1" id="projects">
+              <h2 className="text-[9px] font-bold text-secondary">PROJECTS</h2>
+              <div className="flex flex-col space-y-2 text-ternary">
+                <div>
+                  <h4 className="text-black font-bold">Project Title</h4>
+                  <ul className="list-disc text-[7px] relative left-4 w-5/6">
+                    <li>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Soluta, dolorum?
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maxime, culpa?
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-black font-bold">Project Title</h4>
+                  <ul className="list-disc text-[7px] relative left-4 w-5/6">
+                    <li>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Soluta, dolorum?
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maxime, culpa?
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col space-y-1" id="skills">
+              <h3 className="font-bold text-secondary text-[9px]">SKILLS</h3>
+              <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, soluta.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, soluta.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, soluta.
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col space-y-1" id="certification">
+              <h3 className="font-bold text-secondary text-[9px]">
+                CERTIFICATION
+              </h3>
+              <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, soluta.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, soluta.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, soluta.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article className="w-[30vw] bg-red-400 text-[8px] text-ternary flex flex-col space-y-4">
+            <div className="flex flex-col space-y-1" id="education">
+              <h3 className="text-[9px] font-bold text-secondary">EDUCATION</h3>
+              <div className="flex flex-col space-y-2">
+                <div className="flex flex-col space-y-0.5">
+                  <h4 className="text-[7px]">
+                    <span className="font-bold text-[8px] text-black">
+                      University of Mumbai
+                    </span>
+                    , Mumbai
+                  </h4>
+                  <p className="text-[7px] italic">
+                    B.E in Mechanical Engineering
+                  </p>
+                  <p className="text-[7px]">June 2012 - May 2017</p>
+                  <p className="text-[7px]">Cgpa: 6.45</p>
+                </div>
+                <div className="flex flex-col space-y-0.5">
+                  <h4 className="text-[7px]">
+                    <span className="font-bold text-[8px] text-black">
+                      Fr. Agnel Polytechnic
+                    </span>
+                    , Mumbai
+                  </h4>
+                  <p className="text-[7px] italic">
+                    Diploma in Mechanical Engineering
+                  </p>
+                  <p className="text-[7px]">June 2012 - May 2017</p>
+                  <p className="text-[7px]">Cgpa: 6.45</p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col space-y-1" id="extracurricular">
+              <h3 className="font-bold text-secondary text-[9px]">
+                EXTRA CURRICULAR
+              </h3>
+              <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, soluta.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, soluta.
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col space-y-1" id="extracurricular">
+              <h3 className="font-bold text-secondary text-[9px]">
+                LANGUAGES
+              </h3>
+              <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary">
+                <li>
+                  English, Hindi, Marathi
+                </li>
+              </ul>
+            </div>
+          </article>
+        </main>
       </section>
     </main>
   );
