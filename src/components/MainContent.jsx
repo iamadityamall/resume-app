@@ -30,7 +30,7 @@ const MainContent = () => {
             </div>
           </div>
 
-          <div className="h-[1.5px] w-[85vw] mx-auto bg-secondary/80"></div>
+          <div className="h-[1.5px] w-[90vw] bg-secondary/80"></div>
         </header>
       </section>
     </main>
