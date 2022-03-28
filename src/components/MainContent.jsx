@@ -4,6 +4,7 @@ const MainContent = () => {
   return (
     <main className="bg-black min-h-screen pt-14">
       <section className="z-10 bg-primary w-[95vw] mx-auto p-4 font-secondary">
+        {/* header */}
         <header className="flex flex-col items-center justify-between space-y-1">
           <div className="flex text-[8px] items-center space-x-5">
             <div className="text-ternary">
@@ -33,6 +34,7 @@ const MainContent = () => {
           <div className="h-[1.5px] w-[90vw] bg-secondary"></div>
         </header>
         <main className="flex py-4 w-full space-x-2">
+          {/* left section */}
           <article className="w-[60vw] text-[8px] flex flex-col space-y-4">
             <div className="flex flex-col space-y-1" id="projects">
               <h2 className="text-[9px] font-bold text-secondary">PROJECTS</h2>
@@ -137,6 +139,8 @@ const MainContent = () => {
               </div>
             </div>
           </article>
+
+          {/* right section */}
           <article className="w-[30vw] text-[8px] text-ternary flex flex-col space-y-4">
             <div className="flex flex-col space-y-1" id="education">
               <h3 className="text-[9px] font-bold text-secondary">EDUCATION</h3>
