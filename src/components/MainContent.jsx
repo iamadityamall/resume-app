@@ -19,7 +19,7 @@ const MainContent = () => {
               <h6 className="font-bold">+91 90299 92818</h6>
               <a
                 href="mailto:contact.adityamall@gmail.com"
-                className="underline underline-offset-2 text-blue-700 font-bold"
+                className="underline underline-offset-2 text-blue-700 font-bold text-[7px]"
               >
                 contact.adityamall@gmail.com
               </a>
