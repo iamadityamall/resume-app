@@ -26,15 +26,19 @@ const Navbar = () => {
 
       {/* navbar right section */}
       <div className="flex items-center text-xl space-x-8">
-        <button onClick={() => alert("you clicked me")}>
+        <a
+          href="https://drive.google.com/file/d/1RlMLN1-5cQ7AzDPvsQOFLwZx3a-wq2Mb/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FiDownload />
-        </button>
+        </a>
         <button onClick={() => setMenu(!menu)}>
           <BsThreeDotsVertical />
         </button>
       </div>
 
-      {menu ? <OtherOptions/> : null}
+      {menu ? <OtherOptions /> : null}
     </nav>
   );
 };
