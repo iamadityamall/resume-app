@@ -5,6 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { useState } from "react";
 import OtherOptions from "./OtherOptions";
+import CV from "../assets/Resume-Aditya-Mall.pdf"
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
       {/* navbar right section */}
       <div className="flex items-center text-xl space-x-8">
         <a
-          href="../Resume-Aditya-Mall.pdf"
+          href={CV}
           download
           target="_blank"
           rel="noreferrer"
