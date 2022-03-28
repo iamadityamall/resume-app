@@ -6,9 +6,6 @@ const OtherOptions = () => {
       <li className="p-3">Home</li>
       <li className="p-3">Contact</li>
       <li className="p-3">projects</li>
-      <li className="p-3">Home</li>
-      <li className="p-3">Contact</li>
-      <li className="p-3">projects</li>
     </nav>
   );
 }
