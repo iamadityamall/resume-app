@@ -6,7 +6,6 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { useState } from "react";
 import OtherOptions from "./OtherOptions";
 
-
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
@@ -29,6 +28,7 @@ const Navbar = () => {
       <div className="flex items-center text-xl space-x-8">
         <a
           href="../Resume-Aditya-Mall.pdf"
+          download
           target="_blank"
           rel="noreferrer"
         >
