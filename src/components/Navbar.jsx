@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-8 rounded-lg overflow-hidden">
         <a
           href="https://aditya-mall.netlify.app/"
-          className="transition delay-75 ease-out hover:bg-white/50 p-2"
+          className="transition delay-75 ease-out  p-2"
         >
           <FiArrowLeft className="text-2xl" />
         </a>
