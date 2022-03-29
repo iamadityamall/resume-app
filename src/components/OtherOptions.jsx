@@ -5,7 +5,7 @@ import { IoMdOpen } from "react-icons/io";
 const OtherOptions = () => {
   return (
     <nav className=" rounded-sm fixed right-[-3px] top-14 text-black mr-3 bg-primary transition delay-75 ease-linear list-none w-60 drop-shadow-xl font-secondary">
-      <li className=" p-4 cursor-pointer flex items-center space-x-6">
+      <li className=" p-4 cursor-pointer flex items-center space-x-6 border-b-2 border-gray-300">
         <BiFileFind className="text-xl text-gray-600" />
         <p className="text-xs">Find</p>
       </li>
