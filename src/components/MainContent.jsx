@@ -64,7 +64,7 @@ const MainContent = () => {
                     </li>
                   </ul>
                 </div>
-                <div class="xl:space-y-1">
+                <div className="xl:space-y-1">
                   <h4 className="text-black font-bold xl:text-sm">
                     Project Title
                   </h4>
