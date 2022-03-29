@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
 
       {/* navbar right section */}
-      <div className="flex items-center text-xl space-x-8">
+      <div className="flex items-center text-xl space-x-4">
         <a
           href={CV}
           download
