@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="w-screen flex justify-between px-4 py-2 fixed top-0 text-white bg-gradient-to-b from-black xl:py-6">
+    <nav className="w-screen flex justify-between px-4 py-2 fixed top-0 text-white bg-gradient-to-b from-black xl:py-6 xl:px-8">
       {/*navbar left section*/}
       <div className="flex items-center space-x-8 rounded-lg overflow-hidden">
         <a
@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
 
       {/* navbar right section */}
-      <div className="flex items-center text-xl space-x-4">
+      <div className="flex items-center text-xl space-x-4 xl:space-x-5 xl:p-2">
         <a
           href={CV}
           download
