@@ -13,8 +13,11 @@ const Navbar = () => {
   return (
     <nav className="w-screen flex justify-between px-4 py-2 fixed top-0 text-white bg-gradient-to-b from-black xl:py-6">
       {/*navbar left section*/}
-      <div className="flex items-center space-x-8">
-        <a href="https://aditya-mall.netlify.app/" className="p-2">
+      <div className="flex items-center space-x-8 rounded-lg overflow-hidden">
+        <a
+          href="https://aditya-mall.netlify.app/"
+          className="transition delay-75 ease-out hover:bg-white/50 hover:rounded-lg p-2"
+        >
           <FiArrowLeft className="text-2xl" />
         </a>
         <div className="flex items-center space-x-4">
@@ -27,10 +30,19 @@ const Navbar = () => {
 
       {/* navbar right section */}
       <div className="flex items-center text-xl space-x-8">
-        <a href={CV} download target="_blank" rel="noreferrer">
+        <a
+          href={CV}
+          download
+          target="_blank"
+          rel="noreferrer"
+          className="hover:bg-white/50 hover:rounded-lg p-2"
+        >
           <FiDownload />
         </a>
-        <button onClick={() => setMenu(!menu)}>
+        <button
+          onClick={() => setMenu(!menu)}
+          className="hover:bg-white/50 hover:rounded-lg p-2"
+        >
           <BsThreeDotsVertical />
         </button>
       </div>
