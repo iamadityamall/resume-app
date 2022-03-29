@@ -14,9 +14,9 @@ const Navbar = () => {
     <nav className="w-screen flex justify-between px-4 py-2 fixed top-0 text-white bg-gradient-to-b from-black xl:py-6">
       {/*navbar left section*/}
       <div className="flex items-center space-x-8">
-        <button className="p-2">
+        <a href="https://aditya-mall.netlify.app/" className="p-2">
           <FiArrowLeft className="text-2xl" />
-        </button>
+        </a>
         <div className="flex items-center space-x-4">
           <div>
             <AiFillFilePdf className="text-2xl text-red-600" />
@@ -27,12 +27,7 @@ const Navbar = () => {
 
       {/* navbar right section */}
       <div className="flex items-center text-xl space-x-8">
-        <a
-          href={CV}
-          download
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={CV} download target="_blank" rel="noreferrer">
           <FiDownload />
         </a>
         <button onClick={() => setMenu(!menu)}>
