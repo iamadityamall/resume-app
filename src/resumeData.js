@@ -1,3 +1,24 @@
+export const experiences = [
+  {
+    id: 0,
+    title: "Job Title",
+    year: "month year - month year",
+    info_1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta.",
+
+    info_2:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta.",
+  },
+  {
+    id: 1,
+    title: "Job Title",
+    year: "month year - month year",
+    info_1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta.",
+    info_2:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta.",
+  },
+];
 export const education = [
   {
     id: 0,

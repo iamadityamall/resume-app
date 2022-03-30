@@ -1,5 +1,10 @@
 import React from "react";
-import { education, extracurricular, languages } from "../resumeData";
+import {
+  experiences,
+  education,
+  extracurricular,
+  languages,
+} from "../resumeData";
 
 const MainContent = () => {
   return (
@@ -128,34 +133,20 @@ const MainContent = () => {
                 OTHER EXPERIENCES
               </h2>
               <div className="flex flex-col space-y-2 text-ternary xl:space-y-6">
-                <div className="xl:space-y-1">
-                  <h4 className="text-black font-bold xl:text-sm">Job Title</h4>
-                  <p className="italic xl:text-xs">month year - month year</p>
-                  <ul className="list-disc text-[7px] xl:text-xs xl:space-y-1">
-                    <li>
-                      Lorem ipsum, dolor sit amet consectetur adipisicingelit.
-                      Soluta, dolorum?
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maxime, culpa?
-                    </li>
-                  </ul>
-                </div>
-                <div className="xl:space-y-1">
-                  <h4 className="text-black font-bold xl:text-sm">Job Title</h4>
-                  <p className="italic xl:text-xs">month year - month year</p>
-                  <ul className="list-disc text-[7px] xl:text-xs xl:space-y-1">
-                    <li>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Soluta, dolorum?
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maxime, culpa?
-                    </li>
-                  </ul>
-                </div>
+                {experiences.map((experience) => {
+                  return (
+                    <div className="xl:space-y-1" id={experience.id}>
+                      <h4 className="text-black font-bold xl:text-sm">
+                        {experience.title}
+                      </h4>
+                      <p className="italic xl:text-xs">{experience.year}</p>
+                      <ul className="list-disc text-[7px] xl:text-xs xl:space-y-1">
+                        <li>{experience.info_1}</li>
+                        <li>{experience.info_2}</li>
+                      </ul>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </article>
@@ -174,7 +165,8 @@ const MainContent = () => {
                   return (
                     <article
                       className="flex flex-col space-y-0.5"
-                      key={education.id} >
+                      key={education.id}
+                    >
                       <h4 className="text-[7px] xl:text-sm">
                         <span className="font-bold text-[8px] xl:text-sm text-black">
                           {education.college}
