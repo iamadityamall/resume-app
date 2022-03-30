@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  certifications,
   experiences,
   education,
   extracurricular,
@@ -111,18 +112,9 @@ const MainContent = () => {
                 CERTIFICATION
               </h3>
               <ul className="list-disc  w-[90%] text-[7px] text-ternary xl:text-xs xl:space-y-1">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, soluta.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, soluta.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, soluta.
-                </li>
+                {certifications.map((certifcate) => {
+                  return <li key={certifcate.id}>{certifcate.info}</li>;
+                })}
               </ul>
             </div>
             <div
@@ -135,7 +127,7 @@ const MainContent = () => {
               <div className="flex flex-col space-y-2 text-ternary xl:space-y-6">
                 {experiences.map((experience) => {
                   return (
-                    <div className="xl:space-y-1" id={experience.id}>
+                    <article className="xl:space-y-1" id={experience.id}>
                       <h4 className="text-black font-bold xl:text-sm">
                         {experience.title}
                       </h4>
@@ -144,7 +136,7 @@ const MainContent = () => {
                         <li>{experience.info_1}</li>
                         <li>{experience.info_2}</li>
                       </ul>
-                    </div>
+                    </article>
                   );
                 })}
               </div>

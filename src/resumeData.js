@@ -1,3 +1,18 @@
+export const certifications = [
+  {
+    id: 0,
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta.",
+  },
+  {
+    id: 1,
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta.",
+  },
+  {
+    id: 2,
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta.",
+  },
+];
+
 export const experiences = [
   {
     id: 0,
