@@ -1,5 +1,5 @@
 import React from "react";
-
+import { education, extracurricular, languages } from "../resumeData";
 
 const MainContent = () => {
   return (
@@ -170,32 +170,25 @@ const MainContent = () => {
                 EDUCATION
               </h3>
               <div className="flex flex-col space-y-2 xl:space-y-8">
-                <div className="flex flex-col space-y-0.5">
-                  <h4 className="text-[7px] xl:text-sm">
-                    <span className="font-bold text-[8px] xl:text-sm text-black">
-                      University of Mumbai
-                    </span>
-                    , Mumbai
-                  </h4>
-                  <p className="text-[7px] italic xl:text-xs">
-                    B.E in Mechanical Engineering
-                  </p>
-                  <p className="text-[7px] xl:text-xs">June 2012 - May 2017</p>
-                  <p className="text-[7px] xl:text-xs">Cgpa: 6.45</p>
-                </div>
-                <div className="flex flex-col space-y-0.5">
-                  <h4 className="text-[7px] xl:text-sm">
-                    <span className="font-bold text-[8px] xl:text-sm text-black">
-                      Fr. Agnel Polytechnic
-                    </span>
-                    , Mumbai
-                  </h4>
-                  <p className="text-[7px] italic xl:text-xs">
-                    Diploma in Mechanical Engineering
-                  </p>
-                  <p className="text-[7px] xl:text-xs">June 2012 - May 2017</p>
-                  <p className="text-[7px] xl:text-xs">Cgpa: 6.45</p>
-                </div>
+                {education.map((education) => {
+                  return (
+                    <article
+                      className="flex flex-col space-y-0.5"
+                      key={education.id} >
+                      <h4 className="text-[7px] xl:text-sm">
+                        <span className="font-bold text-[8px] xl:text-sm text-black">
+                          {education.college}
+                        </span>
+                        , {education.city}
+                      </h4>
+                      <p className="text-[7px] italic xl:text-xs">
+                        {education.degree}
+                      </p>
+                      <p className="text-[7px] xl:text-xs">{education.year}</p>
+                      <p className="text-[7px] xl:text-xs">{`${education.scoreMetric} : ${education.score}`}</p>
+                    </article>
+                  );
+                })}
               </div>
             </div>
             <div
@@ -206,19 +199,22 @@ const MainContent = () => {
                 EXTRA CURRICULAR
               </h3>
               <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary xl:text-xs xl:space-y-3">
-                <li>
-                  Worked as a soccer assistant coach for Fr.Agnel School from
-                  2014-17
-                </li>
-                <li>Attemped UPSC ESE exam for the year 2018-20</li>
+                {extracurricular.map((item) => (
+                  <li key={item.id}>{item.info}</li>
+                ))}
               </ul>
             </div>
-            <div className="flex flex-col space-y-1 xl:space-y-3" id="languages">
+            <div
+              className="flex flex-col space-y-1 xl:space-y-3"
+              id="languages"
+            >
               <h3 className="font-bold text-secondary text-[9px] xl:text-lg">
                 LANGUAGES
               </h3>
               <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary xl:text-xs">
-                <li>English, Hindi, Marathi</li>
+                {languages.map((language, index) => (
+                  <li key={index}>{language}</li>
+                ))}
               </ul>
             </div>
           </article>
