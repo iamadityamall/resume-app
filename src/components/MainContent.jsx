@@ -15,7 +15,7 @@ const MainContent = () => {
         {/* header */}
         <header className="flex flex-col items-center justify-between space-y-1 xl:space-y-3">
           <div className="flex text-[8px] items-center space-x-5 xl:space-x-3">
-            <div className="text-ternary space-y-1">
+            <div className="text-ternary">
               <h1 className="font-primary/700 font-extrabold text-black text-lg xl:text-5xl">
                 Aditya Harendra Mall
               </h1>
