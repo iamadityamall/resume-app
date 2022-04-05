@@ -9,7 +9,7 @@ export const header = {
     {
       id: 0,
       path: "https://www.linkedin.com/in/adityaharendramall/",
-      linkName: "LinkedIN",
+      linkName: "Linkedin",
     },
     {
       id: 1,

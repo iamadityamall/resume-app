@@ -24,8 +24,8 @@ const MainContent = () => {
       <section className="z-10 bg-primary w-[95vw] mx-auto p-4 font-secondary xl:w-[55vw] flex flex-col items xl:p-8">
         {/* header */}
         <header className="flex flex-col items-center justify-between space-y-1 xl:space-y-3">
-          <div className="flex text-[8px] items-center space-x-5 xl:space-x-3">
-            <div className="text-ternary">
+          <div className="flex text-[8px] items-center space-x-5 xl:space-x-3 w-full justify-between">
+            <div className="text-ternary w-[60vw] xl:w-[60%] xl:space-y-2">
               <h1 className="font-primary/700 font-extrabold text-black text-lg xl:text-5xl">
                 {name}
               </h1>
@@ -33,7 +33,7 @@ const MainContent = () => {
                 {summary}
               </p>
             </div>
-            <div className="text-ternary space-y-0.5 flex flex-col w-32 xl:text-sm xl:w-48">
+            <div className="text-ternary space-y-0.5 flex flex-col xl:text-sm w-[30vw] xl:w-[30%]">
               <h6 className="font-bold">{phone}</h6>
               <a
                 href="mailto:contact.adityamall@gmail.com"
@@ -47,7 +47,7 @@ const MainContent = () => {
                   return (
                     <a href={path} target="_blank" rel="noreferrer"
                     key={id}
-                    className="text-blue-600 font-secondary text-[8px] font-semibold">
+                    className="text-blue-600 font-secondary text-[8px] font-semibold xl:text-xs">
                       {linkName}
                     </a>
                   );
@@ -81,7 +81,7 @@ const MainContent = () => {
                         href={link}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-[6px] text-blue-600 font-secondary"
+                        className="text-[6px] text-blue-600 font-secondary xl:text-xs"
                       >
                         {link}
                       </a>
