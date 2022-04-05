@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { useState } from "react";
 import OtherOptions from "./OtherOptions";
-import CV from "../assets/Resume-Aditya-Mall.pdf"
+import CV from "../assets/Aditya-Mall-Front-End-Developer-Resume.pdf"
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
