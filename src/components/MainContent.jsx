@@ -1,16 +1,17 @@
 import React from "react";
 import {
+  header,
   certifications,
   experiences,
   education,
   extracurricular,
-  languages,
   projects,
   skills,
   volunteering,
 } from "../resumeData";
 
 const MainContent = () => {
+  const { name, summary, phone, links, email, location } = header;
   return (
     <main
       className="bg-black min-h-screen pt-14 bg-black/80 xl:pt-24"
@@ -26,24 +27,34 @@ const MainContent = () => {
           <div className="flex text-[8px] items-center space-x-5 xl:space-x-3">
             <div className="text-ternary">
               <h1 className="font-primary/700 font-extrabold text-black text-lg xl:text-5xl">
-                Aditya Harendra Mall
+                {name}
               </h1>
               <p className="font-secondary leading-3 xl:text-sm xl:w-5/6">
-                Seeking a position in a reputable organization to start my
-                career and grow, working with my skills and knowledge.
+                {summary}
               </p>
             </div>
             <div className="text-ternary space-y-0.5 flex flex-col w-32 xl:text-sm xl:w-48">
-              <h6 className="font-bold">+91 90299 92818</h6>
+              <h6 className="font-bold">{phone}</h6>
               <a
                 href="mailto:contact.adityamall@gmail.com"
                 className="underline underline-offset-2 text-blue-700 font-bold text-[7px] xl:text-xs"
               >
-                contact.adityamall@gmail.com
+                {email}
               </a>
+              <div className="flex space-x-1">
+                {links.map((link) => {
+                  const { id, path, linkName } = link;
+                  return (
+                    <a href={path} target="_blank" rel="noreferrer"
+                    key={id}
+                    className="text-blue-600 font-secondary text-[8px] font-semibold">
+                      {linkName}
+                    </a>
+                  );
+                })}
+              </div>
               <div>
-                <h6>Navi Mumbai, MH</h6>
-                <h6>400709</h6>
+                <h6>{location}</h6>
               </div>
             </div>
           </div>
@@ -186,11 +197,9 @@ const MainContent = () => {
               <h3 className="font-bold text-secondary text-[9px] xl:text-lg">
                 LANGUAGES
               </h3>
-              <ul className="list-disc relative left-4 w-5/6 text-[7px] text-ternary xl:text-xs">
-                {languages.map((language, index) => (
-                  <li key={index}>{language}</li>
-                ))}
-              </ul>
+              <p className="text-[7px] text-ternary xl:text-xs">
+                English, Hindi, Marathi
+              </p>
             </div>
             <div
               className="flex flex-col space-y-1"

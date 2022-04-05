@@ -1,3 +1,25 @@
+export const header = {
+  id: 0,
+  name: "Aditya Mall",
+  summary:
+    "A hardworking self-taught developer, seeking an opportunity in the web development field.",
+  phone: "+91 90299 92818",
+  email: "contact.adityamall@gmail.com",
+  links: [
+    {
+      id: 0,
+      path: "https://www.linkedin.com/in/adityaharendramall/",
+      linkName: "LinkedIN",
+    },
+    {
+      id: 1,
+      path: "https://github.com/iamadityamall",
+      linkName: "GitHub",
+    },
+  ],
+  location: "Navi Mumbai, MH",
+};
+
 export const projects = [
   {
     id: 0,
