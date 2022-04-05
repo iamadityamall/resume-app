@@ -216,7 +216,7 @@ const MainContent = () => {
                     <article className="space-y-1" key={id}>
                       <h4 className="text-black font-bold text-[7px] xl:text-sm">
                         {`${company},`}{" "}
-                        <span className="font-normal text-[7px]">{`${location} - ${title}`}</span>
+                        <span className="font-normal text-[7px] xl:text-xs">{`${location} - ${title}`}</span>
                       </h4>
                       <p className="italic xl:text-xs text-[7px]">{year}</p>
                       <ul className="list-disc text-[7px] xl:text-xs space-y-1 ml-4">
