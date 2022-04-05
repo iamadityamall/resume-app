@@ -197,7 +197,7 @@ const MainContent = () => {
               id="experience xl:space-y-9"
             >
               <h2 className="text-[9px] font-bold text-secondary xl:text-lg">
-                VOLUNTEERING EXPERIENCES
+                OTHER EXPERIENCE
               </h2>
               <div className="flex flex-col space-y-2 text-ternary xl:space-y-6">
                 {experiences.map((experience) => {
@@ -205,11 +205,11 @@ const MainContent = () => {
                     experience;
                   return (
                     <article className="space-y-1" key={id}>
-                      <h4 className="text-black font-bold xl:text-sm">
+                      <h4 className="text-black font-bold text-[7px] xl:text-sm">
                         {`${company},`}{" "}
-                        <span className="font-normal">{`${location} - ${title}`}</span>
+                        <span className="font-normal text-[7px]">{`${location} - ${title}`}</span>
                       </h4>
-                      <p className="italic xl:text-xs">{year}</p>
+                      <p className="italic xl:text-xs text-[7px]">{year}</p>
                       <ul className="list-disc text-[7px] xl:text-xs space-y-1 ml-4">
                         {info.map((item, index) => {
                           return <li key={index}>{item}</li>;
