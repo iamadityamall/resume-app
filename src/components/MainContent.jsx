@@ -5,6 +5,9 @@ import {
   education,
   extracurricular,
   languages,
+  projects,
+  skills,
+  volunteering,
 } from "../resumeData";
 
 const MainContent = () => {
@@ -48,7 +51,7 @@ const MainContent = () => {
           <div className="h-[1.5px] w-full bg-secondary"></div>
         </header>
 
-        <main className="flex p-4 w-full space-x-2">
+        <main className="flex p-2 w-full space-x-6">
           {/* left section */}
           <article className="w-[60vw] text-[8px] flex flex-col space-y-4 xl:space-y-8">
             <div className="flex flex-col space-y-1" id="projects">
@@ -56,62 +59,46 @@ const MainContent = () => {
                 PROJECTS
               </h2>
               <div className="flex flex-col space-y-2 text-ternary">
-                <div className="xl:space-y-1">
-                  <h4 className="text-black font-bold xl:text-sm">
-                    Project Title
-                  </h4>
-                  <ul className="list-disc text-[7px] xl:text-xs xl:space-y-1">
-                    <li>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Soluta, dolorum?
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maxime, culpa?
-                    </li>
-                  </ul>
-                </div>
-                <div className="xl:space-y-1">
-                  <h4 className="text-black font-bold xl:text-sm">
-                    Project Title
-                  </h4>
-                  <ul className="list-disc text-[7px] xl:text-xs xl:space-y-1">
-                    <li>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Soluta, dolorum?
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maxime, culpa?
-                    </li>
-                  </ul>
-                </div>
+                {projects.map((project) => {
+                  const { id, title, link, info } = project;
+                  return (
+                    <div className="xl:space-y-1 space-y-1" key={id}>
+                      <h4 className="text-black font-bold xl:text-sm">
+                        {title}
+                      </h4>
+                      <a
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[6px] text-blue-600 font-secondary"
+                      >
+                        {link}
+                      </a>
+                      <ul className="list-disc text-[7px] xl:text-xs xl:space-y-1 ml-4">
+                        {info.map((item, index) => {
+                          return <li key={index}>{item}</li>;
+                        })}
+                      </ul>
+                    </div>
+                  );
+                })}
               </div>
             </div>
             <div className="flex flex-col space-y-1" id="skills">
               <h3 className="font-bold text-secondary text-[9px] xl:text-lg">
                 SKILLS
               </h3>
-              <ul className="list-disc w-[90%] text-[7px] text-ternary xl:text-xs xl:space-y-1">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, soluta.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, soluta.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, soluta.
-                </li>
+              <ul className="list-disc w-[90%] text-[7px] text-ternary space-y-1 xl:text-xs ml-4">
+                {skills.map((skill, index) => {
+                  return <li key={index}>{skill}</li>;
+                })}
               </ul>
             </div>
             <div className="flex flex-col space-y-1" id="certification">
               <h3 className="font-bold text-secondary text-[9px] xl:text-lg">
                 CERTIFICATION
               </h3>
-              <ul className="list-disc  w-[90%] text-[7px] text-ternary xl:text-xs xl:space-y-1">
+              <ul className="list-disc  w-[90%] text-[7px] text-ternary xl:text-xs space-y-1 ml-4">
                 {certifications.map((certifcate) => {
                   return <li key={certifcate.id}>{certifcate.info}</li>;
                 })}
@@ -122,19 +109,23 @@ const MainContent = () => {
               id="experience xl:space-y-9"
             >
               <h2 className="text-[9px] font-bold text-secondary xl:text-lg">
-                OTHER EXPERIENCES
+                VOLUNTEERING EXPERIENCES
               </h2>
               <div className="flex flex-col space-y-2 text-ternary xl:space-y-6">
-                {experiences.map((experience) => {
+                {volunteering.map((volunteer) => {
+                  const { id, company, location, title, year, info } =
+                    volunteer;
                   return (
-                    <article className="xl:space-y-1" id={experience.id}>
+                    <article className="space-y-1" key={id}>
                       <h4 className="text-black font-bold xl:text-sm">
-                        {experience.title}
+                        {`${company},`}{" "}
+                        <span className="font-normal">{`${location} - ${title}`}</span>
                       </h4>
-                      <p className="italic xl:text-xs">{experience.year}</p>
-                      <ul className="list-disc text-[7px] xl:text-xs xl:space-y-1">
-                        <li>{experience.info_1}</li>
-                        <li>{experience.info_2}</li>
+                      <p className="italic xl:text-xs">{year}</p>
+                      <ul className="list-disc text-[7px] xl:text-xs space-y-1 ml-4">
+                        {info.map((item, index) => {
+                          return <li key={index}>{item}</li>;
+                        })}
                       </ul>
                     </article>
                   );
@@ -200,6 +191,34 @@ const MainContent = () => {
                   <li key={index}>{language}</li>
                 ))}
               </ul>
+            </div>
+            <div
+              className="flex flex-col space-y-1"
+              id="experience xl:space-y-9"
+            >
+              <h2 className="text-[9px] font-bold text-secondary xl:text-lg">
+                VOLUNTEERING EXPERIENCES
+              </h2>
+              <div className="flex flex-col space-y-2 text-ternary xl:space-y-6">
+                {experiences.map((experience) => {
+                  const { id, company, location, title, year, info } =
+                    experience;
+                  return (
+                    <article className="space-y-1" key={id}>
+                      <h4 className="text-black font-bold xl:text-sm">
+                        {`${company},`}{" "}
+                        <span className="font-normal">{`${location} - ${title}`}</span>
+                      </h4>
+                      <p className="italic xl:text-xs">{year}</p>
+                      <ul className="list-disc text-[7px] xl:text-xs space-y-1 ml-4">
+                        {info.map((item, index) => {
+                          return <li key={index}>{item}</li>;
+                        })}
+                      </ul>
+                    </article>
+                  );
+                })}
+              </div>
             </div>
           </article>
         </main>
